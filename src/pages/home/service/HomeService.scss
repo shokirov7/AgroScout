@@ -1,0 +1,40 @@
+.home_service {
+  position: relative;
+  margin: 30px 0 0 0;
+  background-image: url(../../../assets/img/service_bg.png);
+  background-size: cover;
+  background-position: center;
+  .home_service_content {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    z-index: 2;
+    .home_service_title {
+      color: #fff;
+      font-family: rufo-reg;
+      font-size: 72px;
+      margin-bottom: 50px;
+    }
+    .home_service_desc {
+      width: 37rem;
+      color: #fff;
+      font-family: rufo-light;
+      font-size: 34px;
+      line-height: 54px;
+      margin-bottom: 70px;
+    }
+    .button_component {
+      width: 20rem;
+    }
+  }
+  .home_service_layout {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+}

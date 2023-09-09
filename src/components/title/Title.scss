@@ -1,0 +1,17 @@
+.title_component {
+  position: relative;
+  h1 {
+    color: rgba(255, 255, 255, 0.2);
+    font-family: rufo-bold;
+    font-size: 120px;
+  }
+  h4 {
+    position: absolute;
+    top: 65%;
+    left: 4px;
+    transform: translateY(-65%);
+    color: #02e502;
+    font-family: rufo-reg;
+    font-size: 48px;
+  }
+}

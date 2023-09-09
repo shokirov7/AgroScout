@@ -1,0 +1,59 @@
+.home_proud {
+  position: relative;
+  max-width: 1240px;
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  .proud_cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 17px;
+    .proud_card {
+      position: relative;
+      padding: 50px 30px;
+      background: #1e1d1d;
+      z-index: 2;
+      transition: all .2s linear;
+      cursor: pointer;
+      .proud_card_top {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin-bottom: 18px;
+        span {
+          color: #fff;
+          font-family: rufo-reg;
+          font-size: 22px;
+        }
+      }
+      .proud_card_desc {
+        color: #fff;
+        font-family: rufo-light;
+        font-size: 18px;
+        line-height: 31px;
+      }
+      &:hover {
+        scale: 0.95;
+        -webkit-box-shadow: 4px 4px 8px 2px rgba(26, 255, 0, 0.25);
+        -moz-box-shadow: 4px 4px 8px 2px rgba(26, 255, 0, 0.25);
+        box-shadow: 4px 4px 8px 2px rgba(26, 255, 0, 0.25);
+      }
+    }
+  }
+  .big_drone {
+    position: relative;
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 265px;
+      height: 265px;
+      right: -8.6%;
+      top: -33px;
+      z-index: 1;
+      background-image: url(../../../assets/img/big_drone.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

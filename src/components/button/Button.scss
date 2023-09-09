@@ -1,0 +1,15 @@
+.button_component {
+  width: 100%;
+  padding: 15px 0;
+  color: #02e502;
+  font-family: rufo-reg;
+  font-size: 28px;
+  background-color: transparent;
+  border: 1px solid #02e502;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: #02e5029a;
+    color: #fff;
+  }
+}

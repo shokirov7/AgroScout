@@ -1,0 +1,86 @@
+.home_news {
+  max-width: 1240px;
+  margin: 30px auto 0 auto;
+  padding: 20px 20px 100px 20px;
+  .home_news_holder {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    .home_news_card {
+      cursor: pointer;
+      &:hover {
+        .home_news_card_img {
+          .news_border1 {
+            top: 7px;
+            right: 7px;
+          }
+          .news_border2 {
+            left: 7px;
+            bottom: 7px;
+          }
+        }
+      }
+      .home_news_card_img {
+        position: relative;
+        width: 100%;
+        height: 253px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        img {
+          width: 90%;
+          height: 85%;
+          object-fit: cover;
+        }
+        .news_border {
+          width: 116px;
+          height: 116px;
+          position: absolute;
+          transition: all .2s linear;
+        }
+        .news_border1 {
+          top: 0;
+          right: 0;
+          border-top: 1px solid rgba(2, 229, 2, 1);
+          border-right: 1px solid rgba(2, 229, 2, 1);
+        }
+        .news_border2 {
+          left: 0;
+          bottom: 0;
+          border-left: 1px solid rgba(2, 229, 2, 1);
+          border-bottom: 1px solid rgba(2, 229, 2, 1);
+        }
+      }
+      .home_news_card_title {
+        color: #fff;
+        font-family: rufo-reg;
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+      .home_news_card_desc {
+        color: #fff;
+        font-family: rufo-light;
+        font-size: 18px;
+        line-height: 31px;
+        margin-bottom: 30px;
+      }
+      .home_news_button {
+        a {
+          color: #02e502;
+          font-family: rufo-light;
+          font-size: 16px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid rgba(2, 229, 2, 1);
+          transition: all 0.2s;
+          &:hover {
+            padding-bottom: 6px;
+            color: #00d300;
+            text-shadow: 0 0 1px #02e502, 0 0 3px #02e502, 0 0 5px #02e502;
+          }
+        }
+      }
+    }
+  }
+}

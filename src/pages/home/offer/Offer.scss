@@ -1,0 +1,22 @@
+.home_offer {
+  position: relative;
+  max-width: 1240px;
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  .offer_holder {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .offer_bg {
+    width: 556px;
+    height: 439px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0%;
+    right: -14%;
+    pointer-events: none;
+    z-index: 1;
+  }
+}

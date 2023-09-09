@@ -1,0 +1,102 @@
+.navbar {
+  background: #151515;
+  .nav_content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav_left {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      .nav_logo{
+        object-fit: cover;
+        object-position: bottom;
+      }
+      .nav_phone {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        span {
+          color: #fff;
+          font-family: rufo-reg;
+          font-size: 18px;
+          font-weight: 400;
+          transition: all 0.2s linear;
+          cursor: pointer;
+        }
+        &:hover {
+          svg path,
+          span {
+            text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff;
+          }
+        }
+      }
+    }
+    .nav_right {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      .nav_social,
+      .nav_lang,
+      .nav_interact {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: #fff;
+        font-family: rufo-reg;
+        font-size: 24px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+      .nav_social {
+        a {
+          width: 33px;
+          height: 33px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 2px solid #01b601;
+          transition: all 0.2s linear;
+          &:hover {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .nav_lang {
+        span {
+          transition: color 0.2s linear;
+          &:hover {
+            color: #01b601;
+          }
+        }
+      }
+      .nav_interact {
+        button {
+          width: 33px;
+          height: 33px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          background-color: transparent;
+          transition: all 0.27s linear;
+          cursor: pointer;
+          &:first-child {
+            font-size: 20px;
+          }
+          &:hover {
+            border: 2px solid #01b601;
+            color: #01b601;
+          }
+        }
+      }
+    }
+  }
+}

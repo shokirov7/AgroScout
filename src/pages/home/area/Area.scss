@@ -1,0 +1,40 @@
+.home_area {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+  .area_holder {
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    gap: 75px;
+    z-index: 2;
+    ul {
+      li {
+        list-style: none;
+        color: #fff;
+        font-family: rufo-light;
+        font-size: 24px;
+        line-height: 39px;
+        cursor: pointer;
+        transition: all 0.4s;
+        &:hover {
+          transform: translateX(20px);
+          color: #02e502;
+          text-shadow: 0 0 1px #02e502, 0 0 3px #02e502, 0 0 5px #02e502;
+        }
+      }
+    }
+  }
+  .area_map {
+    width: 800px;
+    height: 700px;
+    top: 0;
+    right: -100px;
+    position: absolute;
+    pointer-events: none;
+  }
+  .sidetitle{
+    left: -23%;
+  }
+}
